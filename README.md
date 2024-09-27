@@ -23,3 +23,12 @@
 
 다음에 배울 내용
 - 나머지 미디어 태그에 대해 배울 예정
+
+## Week 4-2
+form에 대해서 배움
+- post방식인지 get 방식인지 확인하기
+- type은 text로 준다
+[폼 요소의 종류]
+[텍스트 입력]
+- datalist 
+- input type인 radio/checkbox
