@@ -32,3 +32,10 @@ form에 대해서 배움
 [텍스트 입력]
 - datalist 
 - input type인 radio/checkbox
+
+## Week 5-2
+- <select> 
+   - 드롭다운 리스트에 목록 출력, 목록을 선택하는 입력 방식
+     - option 태그로 항목 하나 표현
+- <fieldset>
+  - form 요소를 묶는 것을 의미

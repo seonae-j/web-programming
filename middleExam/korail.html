@@ -1,0 +1,602 @@
+<div class="cont_info" id="center">
+  <!-- cont_info -->
+  
+    <div class="step_tick">
+      <ul>
+      <li><img name="imgStep01" src="/images/prd/step_tck01_on.gif" alt="STEP01 조회"></li>
+      <li><img name="imgStep02" src="/images/prd/step_tck02.gif" alt="STEP02 예매"></li>
+      <li><img name="imgStep03" src="/images/prd/step_tck03.gif" alt="STEP03 결제"></li>
+      <li><img name="imgStep04" src="/images/prd/step_tck04.gif" alt="STEP04 발권"></li>
+      </ul>
+    </div>
+
+    <div class="tab">
+      <ul class="control tab04">
+        <li><a href="#wrap" onclick="fn_GomoveEbizUrl('form1' , m_menuPrd1_1_1);" class="on">일반승차권</a></li>
+        
+        <li><span class="ico_new"></span><a href="#wrap" onclick="fn_GomoveEbizUrl('form1' , m_menuPrd1_1_2);">할인승차권</a></li>
+        <li><a href="#wrap" onclick="fn_GomoveEbizUrl('form1' , m_menuPrd1_1_3);">4인동반석</a></li>
+        <li><a href="#wrap" onclick="fn_GomoveEbizUrl('form1' , m_menuPrd1_1_4);">관광열차</a></li>
+        
+      </ul>
+    </div>
+
+    <form name="form1" method="post" action="">
+    <input type="hidden" name="run" value="">
+    <input type="hidden" name="selGoTrain" value="05">
+
+    <div class="ticket_box"><!-- 일반승차권 직통예약 -->
+      <div class="part_lef" style="height:291px"><!-- part_lef -->
+        <div class="box_ck01"><!-- box_ck01 -->
+          <h4 class="blind">인원/장애/할인 선택</h4>
+          <dl class="pt01">
+          <dt>인원정보</dt>
+          <dd>
+            <ul>
+              <li><label for="peop01">어른</label>
+                <select id="peop01" name="txtPsgFlg_1" title="인원정보 : 어른" style="width:110px;">
+                  <option selected="selected" value="0">어른 0명</option>
+                  
+                  <option selected="selected" value="1">어른 1명</option>
+                  
+                  <option value="2">어른 2명</option>
+                  
+                  <option value="3">어른 3명</option>
+                  
+                  <option value="4">어른 4명</option>
+                  
+                  <option value="5">어른 5명</option>
+                  
+                  <option value="6">어른 6명</option>
+                  
+                  <option value="7">어른 7명</option>
+                  
+                  <option value="8">어른 8명</option>
+                  
+                  <option value="9">어른 9명</option>
+                  
+                </select>
+              </li>
+
+              
+              <li><label for="peop02">6세~12세 소아</label>
+                <select id="peop02" name="txtPsgFlg_2" title="인원정보 : 6세 ~ 12세 어린이" style="width:110px;">
+                  <option selected="selected" value="0">6세~12세</option>
+                  
+                ㅈ	<option value="1">어린이 1명</option>
+                  
+                ㅈ	<option value="2">어린이 2명</option>
+                  
+                ㅈ	<option value="3">어린이 3명</option>
+                  
+                ㅈ	<option value="4">어린이 4명</option>
+                  
+                ㅈ	<option value="5">어린이 5명</option>
+                  
+                ㅈ	<option value="6">어린이 6명</option>
+                  
+                ㅈ	<option value="7">어린이 7명</option>
+                  
+                ㅈ	<option value="8">어린이 8명</option>
+                  
+                ㅈ	<option value="9">어린이 9명</option>
+                  
+                </select>
+              </li>
+
+              <li><label for="peop04">6세 미만 유아</label>
+                <select id="peop04" name="txtPsgFlg_8" title="인원정보 : 6세 미만 유아" style="width:110px;">
+                  <option selected="selected" value="0">6세 미만</option>
+                  
+                  <option value="1">유아1명</option>
+                  
+                  <option value="2">유아2명</option>
+                  
+                  <option value="3">유아3명</option>
+                  
+                  <option value="4">유아4명</option>
+                  
+                  <option value="5">유아5명</option>
+                  
+                  <option value="6">유아6명</option>
+                  
+                  <option value="7">유아7명</option>
+                  
+                  <option value="8">유아8명</option>
+                  
+                  <option value="9">유아9명</option>
+                  
+                </select>
+
+              </li>
+
+              <li><label for="peop03">65세이상 경로</label>
+                <select id="peop03" name="txtPsgFlg_3" title="인원정보 : 65세이상 경로" style="width:110px;">
+                  <option selected="selected" value="0">65세이상</option>
+                  
+                  <option value="1">경로 1명</option>
+                  
+                  <option value="2">경로 2명</option>
+                  
+                  <option value="3">경로 3명</option>
+                  
+                  <option value="4">경로 4명</option>
+                  
+                  <option value="5">경로 5명</option>
+                  
+                  <option value="6">경로 6명</option>
+                  
+                  <option value="7">경로 7명</option>
+                  
+                  <option value="8">경로 8명</option>
+                  
+                  <option value="9">경로 9명</option>
+                  
+                </select>
+              </li>
+
+              
+            </ul>
+          </dd>
+          </dl>
+          <dl class="pt02">
+          <dt>장애정도</dt>
+          <dd>
+            <ul>
+              
+              <li><label for="obs13">중증</label>
+                <select id="obs13" name="txtPsgFlg_4" title="인원정보 : 장애의 정도가 심한 장애인(구1~3급)" style="width:110px;">
+                  <option selected="selected" value="0">중증 0명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                  
+                  <option value="1">중증 1명</option>
+                  
+                  <option value="2">중증 2명</option>
+                  
+                  <option value="3">중증 3명</option>
+                  
+                  <option value="4">중증 4명</option>
+                  
+                  <option value="5">중증 5명</option>
+                  
+                  <option value="6">중증 6명</option>
+                  
+                  <option value="7">중증 7명</option>
+                  
+                  <option value="8">중증 8명</option>
+                  
+                  <option value="9">중증 9명</option>
+                  
+                </select>
+              </li>
+
+              <li><label for="obs46">경증</label>
+                <select id="obs46" name="txtPsgFlg_5" title="인원정보 : 장애의 정도가 심하지 않은 장애인(구4~6급)" style="width:110px;">
+                  <option selected="selected" value="0">경증 0명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                  
+                  <option value="1">경증 1명</option>
+                  
+                  <option value="2">경증 2명</option>
+                  
+                  <option value="3">경증 3명</option>
+                  
+                  <option value="4">경증 4명</option>
+                  
+                  <option value="5">경증 5명</option>
+                  
+                  <option value="6">경증 6명</option>
+                  
+                  <option value="7">경증 7명</option>
+                  
+                  <option value="8">경증 8명</option>
+                  
+                  <option value="9">경증 9명</option>
+                  
+                </select>
+              </li>
+              
+            </ul>
+          </dd>
+          </dl>
+        </div><!-- //box_ck01 -->
+
+        <div class="box_ck03"><!-- box_ck03 -->
+          <dl>
+          <dt>좌석종류선택</dt>
+          <dd><label for="seat01">창/내측/1인좌석종별</label>
+            <select id="seat01" name="txtSeatAttCd_3" title="차실/좌석 : 창/내측/1인좌석종별" class="selt60" onchange="chgSeatAttCd_3()">
+              <option value="000" selected="selected">기본</option>
+              
+              <option value="011">1인석</option>
+              
+              <option value="012">창측좌석</option>
+              <option value="013">내측좌석</option>
+            </select>
+          </dd>
+          <dd><label for="seat02">좌석 방향</label>
+            <select id="seat02" name="txtSeatAttCd_2" title="차실/좌석 : 좌석 방향" class="selt60" onchange="chgSeatAttCd_2()">
+              <option value="000" selected="selected">좌석방향</option>
+              <option value="009">순방향석</option>
+              <option value="010">역방향석</option>
+            </select>
+          </dd>
+          <dd class="st03">
+            <label for="seat03">할인좌석종별</label>
+            <select id="seat03" name="txtSeatAttCd_4" title="차실/좌석 : 할인좌석종별" class="selt60" onchange="chgSeatAttCd_4()">
+              <option value="015" id="ty08" selected="selected">기본</option>
+              
+              <option value="019">유아동반</option>
+              <option value="019">편한대화</option>
+              <option value="031">노트북</option>
+              <option value="021">수동휠체어석</option>
+              <option value="028">전동휠체어석</option>
+              <!-- 2012.05.30 ljy 강영숙
+              <option value=029>교통약자      </option>
+              -->
+              
+              <!-- <option value=029>장애인석</option> -->
+              
+              <option value="XXX">수유실 인접</option>
+              <option value="018">2층석</option>
+              <option value="032">자전거거치대</option>
+              <!-- 삭제 14.02.03 ljy 김윤석
+              <option value="030">레포츠보관함 </option>
+              -->
+              
+            </select>
+          </dd>
+          </dl>
+        </div><!-- box_ck03 -->
+
+        <div class="box_ck03" style="color:gray;"><!-- box_ck03 -->
+                <dl>
+                  <dt style="color: gray;background: none;padding: 0px;margin-bottom:0px">
+                    장애정도
+                  </dt>
+                  <dd>
+                    경증 : 장애의 정도가 심하지 않은 장애인(구 4~6급)
+                  </dd>
+                  <dd>
+                    중증 : 장애의 정도가 심한 장애인(구 1~3급)
+                  </dd>
+                </dl>
+              </div>
+
+      </div><!-- //part_lef -->
+      <div class="part_rig" style="height:269px"><!-- part_rig-->
+        <ul class="tra_box box2">
+          <li class="wd20"><input type="radio" id="selGoTrainRa05" name="selGoTrainRa" value="05" title="전체" onclick="fnSelGoTrain('05','1');" checked="checked"><label>전체</label></li>
+          <!-- 상호판매 수정 시작  - 2016.10. -->
+          <li><input type="radio" id="selGoTrainRa00" name="selGoTrainRa" value="00" title="KTX" onclick="fnSelGoTrain('00','2');"><label>KTX⁄SRT</label></li>
+          <!-- //상호판매 수정 종료  - 2016.10. -->
+          <li><input type="radio" id="selGoTrainRa09" name="selGoTrainRa" value="09" title="ITX-청춘" onclick="fnSelGoTrain('09','3');"><label>ITX-청춘</label></li>
+          <li class="ml20p"><input type="radio" id="selGoTrainRa18" name="selGoTrainRa" value="18" title="ITX-마음" onclick="fnSelGoTrain('18','9');"><label>새마을호⁄ITX-마음</label></li>
+          <li><input type="radio" id="selGoTrainRa02" name="selGoTrainRa" value="02" title="무궁화호" onclick="fnSelGoTrain('02','4');"><label>무궁화호⁄누리로</label></li>
+          
+        </ul>
+        <div class="rbox_cont">
+          <dl class="pt01">
+          <dt>여정경로</dt>
+          <dd>
+            <ul style="list-style:none; oveflow:hidden;">
+              <li style="float:left; width:40%;">
+                <input type="radio" id="route01" name="radJobId" value="1" onclick="javascript:gourl('1');" onkeypress="javascript:gourl('1');" checked="checked"><label for="route01">직통&nbsp;(<input type="checkbox" id="adjcCheckYn" name="adjcCheckYn" value="Y" checked=""><label for="adjcCheckYn" style="margin-right: 0px;vertical-align: baseline;">인접역포함)</label></label>
+              </li>
+              
+              <li style="float:left; width:40%;">
+                <input type="radio" id="route02" name="radJobId" value="2" onclick="javascript:gourl('2');" onkeypress="javascript:gourl('2');"><label for="route02" style="margin-right: 0px;">환승</label>
+              </li>
+              <li style="float:left; width:20%;">
+                <input type="radio" id="route03" name="radJobId" value="3" onclick="javascript:gourl('3');" onkeypress="javascript:gourl('3');"><label for="route03">왕복<!-- &nbsp;(사랑여행 KTX 묶음상품) --></label>
+              </li>
+              
+            </ul>
+          </dd>
+          </dl>
+
+          <dl class="pt02">
+          <dt><label for="start">출발역</label></dt>
+          <dd><input id="start" name="txtGoStart" type="text" class="inp250" value="서울" title="출발역" autocomplete="off" style="ime-mode:active"><a href="javascript:btnPopWin(1,'txtGoStart')"><img src="/images/btn_tra_sch.png" alt="조회"></a>
+          </dd>
+          </dl>
+
+          <dl class="pt02">
+          <dt><label for="get">도착역</label></dt>
+          <dd><input id="get" name="txtGoEnd" type="text" class="inp250" value="부산" title="도착역" autocomplete="off" style="ime-mode:active"><a href="javascript:btnPopWin(1,'txtGoEnd')"><img src="/images/btn_tra_sch.png" alt="조회"></a>&nbsp;
+            <a href="#" onclick="sta_chg('form1');" title="변경 버튼을 누르면 출발역과 도착역이 서로 바뀝니다"><img src="/images/btn_tra_chg.png" alt="출발/도착역 교환"></a>
+            <input type="hidden" name="txtGoStartCode" value="">
+            <input type="hidden" name="txtGoEndCode" value="">
+          </dd>
+          </dl>
+
+          <dl class="pt03">
+          <dt>출발일</dt>
+          <dd><label for="s_year" class="blind">출발년도</label>
+            <select id="s_year" name="selGoYear" onchange="isValidDateSetting(form1.selGoYear,form1.selGoMonth,form1.selGoDay,form1.selGoHour);" title="출발일시 : 년도">
+            
+              <option value="2024" selected="selected">2024</option>
+            
+              <option value="2025">2025</option>
+            
+              <option value="2026">2026</option>
+            
+            </select>년
+
+            <label for="s_month" class="blind">출발월</label>
+            <select id="s_month" name="selGoMonth" onchange="isValidDateSetting(form1.selGoYear,form1.selGoMonth,form1.selGoDay,form1.selGoHour);" title="출발일시 : 월">
+            
+              <option value="01">1</option>
+            
+              <option value="02">2</option>
+            
+              <option value="03">3</option>
+            
+              <option value="04">4</option>
+            
+              <option value="05">5</option>
+            
+              <option value="06">6</option>
+            
+              <option value="07">7</option>
+            
+              <option value="08">8</option>
+            
+              <option value="09">9</option>
+            
+              <option selected="selected" value="10">10</option>
+            
+              <option value="11">11</option>
+            
+              <option value="12">12</option>
+            
+            </select>월
+
+            <label for="s_day" class="blind">출발일자</label>
+            <select id="s_day" name="selGoDay" onchange="isValidDateSetting(form1.selGoYear,form1.selGoMonth,form1.selGoDay,form1.selGoHour);" title="출발일시 : 일">
+            
+              <option value="01">1</option>
+            
+              <option value="02">2</option>
+            
+              <option value="03">3</option>
+            
+              <option selected="selected" value="04">4</option>
+            
+              <option value="05">5</option>
+            
+              <option value="06">6</option>
+            
+              <option value="07">7</option>
+            
+              <option value="08">8</option>
+            
+              <option value="09">9</option>
+            
+              <option value="10">10</option>
+            
+              <option value="11">11</option>
+            
+              <option value="12">12</option>
+            
+              <option value="13">13</option>
+            
+              <option value="14">14</option>
+            
+              <option value="15">15</option>
+            
+              <option value="16">16</option>
+            
+              <option value="17">17</option>
+            
+              <option value="18">18</option>
+            
+              <option value="19">19</option>
+            
+              <option value="20">20</option>
+            
+              <option value="21">21</option>
+            
+              <option value="22">22</option>
+            
+              <option value="23">23</option>
+            
+              <option value="24">24</option>
+            
+              <option value="25">25</option>
+            
+              <option value="26">26</option>
+            
+              <option value="27">27</option>
+            
+              <option value="28">28</option>
+            
+              <option value="29">29</option>
+            
+              <option value="30">30</option>
+            
+              <option value="31">31</option>
+            
+            </select>일
+
+            <label for="s_hour" class="blind">출발시</label>
+            <select id="s_hour" name="selGoHour" title="출발일시 : 시">
+            
+              <option value="00">0 (오전00)</option>
+            
+              <option value="01">1 (오전01)</option>
+            
+              <option value="02">2 (오전02)</option>
+            
+              <option value="03">3 (오전03)</option>
+            
+              <option value="04">4 (오전04)</option>
+            
+              <option value="05">5 (오전05)</option>
+            
+              <option value="06">6 (오전06)</option>
+            
+              <option value="07">7 (오전07)</option>
+            
+              <option value="08">8 (오전08)</option>
+            
+              <option value="09">9 (오전09)</option>
+            
+              <option value="10">10 (오전10)</option>
+            
+              <option value="11">11 (오전11)</option>
+            
+              <option value="12">12 (오후00)</option>
+            
+              <option value="13">13 (오후01)</option>
+            
+              <option value="14">14 (오후02)</option>
+            
+              <option selected="selected" value="15">15 (오후03)</option>
+            
+              <option value="16">16 (오후04)</option>
+            
+              <option value="17">17 (오후05)</option>
+            
+              <option value="18">18 (오후06)</option>
+            
+              <option value="19">19 (오후07)</option>
+            
+              <option value="20">20 (오후08)</option>
+            
+              <option value="21">21 (오후09)</option>
+            
+              <option value="22">22 (오후10)</option>
+            
+              <option value="23">23 (오후11)</option>
+            
+            </select>시<input type="hidden" name="txtGoHour">
+
+            <label for="s_week" class="blind">출발요일</label>
+            <input id="s_week" type="text" size="2" name="txtGoYoil" value="금" readonly="readonly" title="출발일시 : 요일" class="inp20">&nbsp;<a href="javascript:btnPopWin(2,'Go','N')" title="달력 새창열기"><img src="/images/btn_calen02.gif" alt="달력"></a>
+          </dd>
+          </dl>
+        </div>
+      </div><!-- //right box-->
+
+      <!-- 2019.05.10 권윤찬 SFR-003 추천열차 바로결제 -->
+      <div class="btn_liketravel" style="display:none;">
+        <input id="btnBuy" type="text" value="간편구매 등록" placeholder="즐겨찾기 항목선택" onclick="javascript:buynow();" class="btn_buynow" readonly="">
+        <div class="slt_dropdown">
+          <div onclick="javascript:viewListFavor();" class="btn_drop">즐겨찾기</div>
+          <div id="myDropdown" class="ddList"></div>
+        </div>
+      </div>
+
+      <p class="btn_inq" style="bottom:-12px"><a href="javascript:inqSchedule()"><img src="/images/btn_inq_tick.gif" alt="조회하기"></a></p>
+    </div><!-- //예약 -->
+
+    <!-- 좌석속성과 객실속성을 주석처리함으로써 표현 -->
+    <input type="hidden" name="selGoSeat1" value="015">
+    <input type="hidden" name="selGoSeat2" value="015">
+    <input type="hidden" name="txtPsgCnt1" value="0">
+    <input type="hidden" name="txtPsgCnt2" value="0">
+    <!-- 좌석속성과 객실속성을 주석처리함으로써 표현 끝-->
+
+    <input type="hidden" name="txtGoPage" value="1">
+    <input type="hidden" name="txtGoAbrdDt" value="">
+    <input type="hidden" name="selGoRoom" value="">
+    <input type="hidden" name="useSeatFlg">
+    <input type="hidden" name="useServiceFlg">
+    <input type="hidden" name="checkStnNm" value="Y">
+
+    <input type="hidden" name="txtMenuId" value="11">
+
+    <input type="hidden" name="SeandYo" value="">
+
+    <input type="hidden" name="txtGoStartCode2" value="">
+    <input type="hidden" name="txtGoEndCode2" value="">
+
+    <input type="hidden" name="selGoStartDay" value="">
+    <input type="hidden" name="hidEasyTalk" value=""><!-- 편한대화 2012.04.13 ljy -->
+
+    <input type="hidden" name="hidCapFlag" id="hidCapFlag" value="">
+
+    
+    <!-- 환승의 경우 선행, 후행 선택 여부 체크를 위해 사용  -->
+    <input type="hidden" name="ra" value="1">    <!--// 할인카드사용여부 -->
+    <input type="hidden" name="txtSeatAttCd1" value="">
+    <input type="hidden" name="txtSeatAttCd2" value="">     <!--// 순/역방향       -->
+    <input type="hidden" name="txtSeatAttCd3" value="">     <!--// 창측/내측       -->
+    <input type="hidden" name="txtSeatAttCd4" value="">     <!--// 요구속성        -->
+    <input type="hidden" name="txtSeatAttCd4_1" value="">     <!--// 요구속성        -->
+    <input type="hidden" name="txtSeatAttCd5" value="">     <!--// 노트/어린이단독 -->
+    <input type="hidden" name="txtTotPsgCnt" value="">
+    <input type="hidden" name="hidRsvTpCd" value="03"> <!-- 단체예약(09), 일반예약(03) 구분 -->
+    <input type="hidden" name="txtPsgTpCd1" value="1">
+    <input type="hidden" name="txtPsgTpCd2" value="3">
+    <input type="hidden" name="txtPsgTpCd3" value="1">
+    <input type="hidden" name="txtPsgTpCd4" value="">
+    <input type="hidden" name="txtPsgTpCd5" value="1">
+    <input type="hidden" name="txtPsgTpCd6" value="">
+    <input type="hidden" name="txtPsgTpCd7" value="1">
+    <input type="hidden" name="txtPsgTpCd8" value="3">
+    <input type="hidden" name="txtPsgTpCd9" value="">
+    <input type="hidden" name="txtDiscKndCd1" value="000">
+    <input type="hidden" name="txtDiscKndCd2" value="000">
+    <input type="hidden" name="txtDiscKndCd3" value="111">
+    <input type="hidden" name="txtDiscKndCd4" value="">
+    <input type="hidden" name="txtDiscKndCd5" value="131">
+    <input type="hidden" name="txtDiscKndCd6" value="">
+    <input type="hidden" name="txtDiscKndCd7" value="112">
+    <input type="hidden" name="txtDiscKndCd8" value="321">
+    <input type="hidden" name="txtDiscKndCd9" value="">
+    <input type="hidden" name="txtCompaCnt1" value="0">
+    <input type="hidden" name="txtCompaCnt2" value="0">
+    <input type="hidden" name="txtCompaCnt3" value="0">
+    <input type="hidden" name="txtCompaCnt4" value="0">
+    <input type="hidden" name="txtCompaCnt5" value="0">
+    <input type="hidden" name="txtCompaCnt6" value="0">
+    <input type="hidden" name="txtCompaCnt7" value="0">
+    <input type="hidden" name="txtCompaCnt8" value="0">
+    <input type="hidden" name="txtCompaCnt9" value="">
+    <input type="hidden" name="txtStndFlg" value="">   <!--// 입석/OB 여부 -->
+    <input type="hidden" name="txtJobId" value="">
+    <input type="hidden" name="txtJrnyCnt" value="">   <!--// 여정수       -->
+    <input type="hidden" name="txtPsrmClCd1" value="">
+    <input type="hidden" name="txtJrnySqno1" value="">
+    <input type="hidden" name="txtJrnyTpCd1" value="">
+    <input type="hidden" name="txtDptDt1" value="">
+    <input type="hidden" name="txtDptRsStnCd1" value="">
+    <input type="hidden" name="txtDptRsStnCdNm1" value="">
+    <input type="hidden" name="txtDptTm1" value="">
+    <input type="hidden" name="txtArvRsStnCd1" value="">
+    <input type="hidden" name="txtArvRsStnCdNm1" value="">
+    <input type="hidden" name="txtArvTm1" value="">
+    <input type="hidden" name="txtTrnNo1" value="">
+    <input type="hidden" name="txtRunDt1" value="">
+    <input type="hidden" name="txtTrnClsfCd1" value="">
+    <input type="hidden" name="txtTrnGpCd1" value="">
+    <input type="hidden" name="txtChgFlg1" value="">
+    <input type="hidden" name="txtPsrmClCd2" value="">
+    <input type="hidden" name="txtJrnySqno2" value="">
+    <input type="hidden" name="txtJrnyTpCd2" value="">
+    <input type="hidden" name="txtDptDt2" value="">
+    <input type="hidden" name="txtDptRsStnCd2" value="">
+    <input type="hidden" name="txtDptRsStnCdNm2" value="">
+    <input type="hidden" name="txtDptTm2" value="">
+    <input type="hidden" name="txtArvRsStnCd2" value="">
+    <input type="hidden" name="txtArvRsStnCdNm2" value="">
+    <input type="hidden" name="txtArvTm2" value="">
+    <input type="hidden" name="txtTrnNo2" value="">
+    <input type="hidden" name="txtRunDt2" value="">
+    <input type="hidden" name="txtTrnClsfCd2" value="">
+    <input type="hidden" name="txtTrnGpCd2" value="">
+    <input type="hidden" name="txtChgFlg2" value="">
+    <!-- 2019.05.28 권윤찬 SFR-003 예약을 위한 값 시작  파라메터 추가 끝 -->
+
+    </form>
+
+    <div class="state" style="display:block"><!--숨은 영역-->
+    </div><!--//숨은 영역-->
+
+    <div class="ban_btm01">
+                  <!-- 광고 재개시 주석 제거 필요 : 2017-06-14 -->
+      <a href="/common/imageLink.do?adAreaCd=AREA02" target="_blank"><img src="/file/AD/AREA02.gif" alt="광고" width="800" height="80"></a>
+    </div>
+
+  <!-- //cont_info -->
+  </div>

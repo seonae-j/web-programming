@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상품 구매</title>
+</head>
+<body>
+  <form method="post" autocomplete="off">
+    <fieldset>
+      <legend>상품 선택</legend>
+      <table>
+        <tr>
+          <td>
+            <b>주문할 상품 선택</b><br>
+            <input type="checkbox" name="fruit" value="apple"> 사과
+            <input type="checkbox" name="fruit" value="pearl"> 배
+            <input type="checkbox" name="fruit" value="grape"> 포도
+            <input type="checkbox" name="fruit" value="berry"> 딸기
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>용량 선택</b><br>
+            <select>
+              <option value="pr3">선물용 3kg</option>
+              <option value="pr5">선물용 5kg</option>
+              <option value="ho3">가정용 3kg</option>
+              <option value="ho5">가정용 5kg</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset>
+      <legend>배송 정보</legend>
+      <table>
+        <tr>
+          <td><label for="name">이름</label></td>
+          <td><input type="text" name="username" id="name" size="40" required></td>
+        </tr>
+        <tr>
+          <td><label for="address">배송 주소</label></td>
+          <td><input type="text" name="useraddress" id="address" size="40" required></td>
+        </tr>
+        <tr>
+          <td><label for="emailaddress">이메일</label></td>
+          <td><input type="email" name="useremail" id="emailaddress" size="40" 
+            placeholder="abc@abc.com" required></td>
+        </tr>
+        <tr>
+          <td><label for="telephone">연락처</label></td>
+          <td><input type="tel" name="usertel" id="telephone" size="40" placeholder="숫자만 입력" required></td>
+        </tr>
+        <tr>
+          <td>배송지정</td>
+          <td><input type="date" name="orderdate" size="40" required>
+          <small>(주문일로부터 최소 3일 이후)</small></td>
+        </tr>
+        <tr>
+          <td>배송희망시간</td>
+          <td><input type="time"></td>
+        </tr>
+        <tr>
+          <td>지속시간<small>(0.0~10.0시간)</small></td>
+          <td><input type="number" min="0.0" max="10.0" step="0.5" placeholder="0"></td>
+        </tr>
+        <tr>
+          <td><label for="memo">메모</label></td>
+          <td><textarea cols="42" rows="6" id="memo" placeholder="배송 시 요청사항"></textarea></td>
+        </tr>
+      </table>
+    </fieldset><br>
+    <input type="reset" value="다시 작성하기">
+    <input type="submit" value="주문하기">
+  </form>
+</body>
+</html>
