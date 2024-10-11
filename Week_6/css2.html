@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      color: orange;
+    }
+
+    body {background-color: mistyrose;}
+    h1 {
+      text-align: center;
+      color: purple;
+    }
+    hr {border: 5px solid yellowgreen;}
+    span {
+      color: blue; 
+      font-size: 20px;
+    }
+    p {
+      color: red; font-size: 15px;
+    }
+    #list {
+      background-color: rgb(205, 139, 139);
+    }
+    #li {
+      color: black;
+    }
+    .warning {
+      color: blue;
+    } /* .은 class 속성에만 적용된다. */
+    .lis {
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS 맛보기</h1>
+  <hr>
+  <p>동아<span>대학교</span> 경영정보학과</p>
+  <p style="color: magenta; font-size: 30px">남포동 맛집 찾기</p>
+
+  <hr>
+  <div class="warning lis"> 60점 이하는 F학점 </div>
+  <ul id="list li">
+    <li id="list li">CSS</li>
+    <li>스크립트</li>
+    <li>자바</li>
+  </ul>
+</body>
+</html>

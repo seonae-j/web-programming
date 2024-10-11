@@ -39,3 +39,7 @@ form에 대해서 배움
      - option 태그로 항목 하나 표현
 - <fieldset>
   - form 요소를 묶는 것을 의미
+
+## Week_6
+- # 셀렉터
+- html태그 안의 id 이름을 사용하여 css를 주는 것
