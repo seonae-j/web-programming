@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Lists</title>
+    <style>
+      h3:first-letter {
+        color: red;
+      }
+      li:hover {
+        background-color: yellowgreen;
+      }
+      /* border-collapse : 
+      - collapse : 해당 테이블의 테두리는 한 줄로 표현된다 
+      - separate : 표 분리자*/
+      tbody,
+      tr table,
+      th,
+      td {
+        border: 1px solid black; /* 단일 흑색 */
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 20px 30px;
+      }
+      th,
+      td {
+        padding: 10px;
+        border-bottom: 1px solid #cd5c5c;
+      }
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+      th {
+        text-align: left;
+        height: 50px;
+      }
+      td {
+        vertical-align: bottom;
+      }
+      tbody tr:nth-child(even) {
+        /* 짝수 <tr>에 적용*/
+        background: aliceblue;
+      }
+      tbody tr:hover {
+        background: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Web Programming</h3>
+    <ul>
+      <li>HTML</li>
+      <li><strong>CSS</strong></li>
+      <li>JAVASCRIPT</li>
+    </ul>
+    <br />
+    <table>
+      <tr>
+        <th>참치</th>
+        <th>고래</th>
+        <th>날치</th>
+      </tr>
+      <tr>
+        <td>상어</td>
+        <td>문어</td>
+        <td>꽁치</td>
+      </tr>
+      <tr>
+        <td>오징어</td>
+        <td>고등어</td>
+        <td>돌고래</td>
+      </tr>
+    </table>
+  </body>
+</html>
