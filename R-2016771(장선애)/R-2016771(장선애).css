@@ -7,7 +7,7 @@
 
 /* 페이지 기본 스타일 */
 body {
-  background-color: #f9f9f9;
+  background-color: #f6f5f1;
 }
 
 .container {
@@ -18,15 +18,15 @@ body {
 
 /* Header 스타일 */
 header {
-  background-color: black;
+  background-color: #083459;
   color: white;
   text-align: center;
-  padding: 20px 10px 30px 10px;
   margin: 0;
   height: 200px;
+  padding: 40px 0 0 0;
 }
 
-span {
+.header-text span {
   color: yellow;
 }
 
@@ -36,6 +36,7 @@ span {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  padding: 60px 0 0 0;
 }
 
 .item {
@@ -61,7 +62,7 @@ span {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: black;
+  background-color: #083459;
   color: white;
   margin: 0;
   position: fixed;
