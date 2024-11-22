@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Function</title>
+    <script>
+      function checkEvenOdd(num) {
+        if (num % 2 == 0) {
+          return '짝수';
+        } else {
+          return '홀수';
+        }
+      }
+
+      function sumUpToN(num) {
+        let sum = 0;
+        for (let i = 1; i <= num; i++) {
+          sum += i;
+        }
+        return sum;
+      }
+
+      document.write(checkEvenOdd(7) + '<br>'); // 홀수
+      document.write(checkEvenOdd(10) + '<br>'); // 짝수
+      document.write(sumUpToN(5) + '<br>'); // 15
+    </script>
+  </head>
+  <body></body>
+</html>
